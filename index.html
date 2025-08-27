@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+    
+</head>
+<body>
+     <nav class="flex justify-between p-10 text-white  bg-blue-800">
+            <div>
+            <h1 class="font-Head text-4xl font-bold animate__animated animate__fadeIn animate__slower animate__infinite cursor-pointer">N.MURUGAN</h1>
+            </div>
+
+            <div>
+                <ul class="font-nav font-medium hidden md:flex space-x-5">
+                    <li class="hover:text-black cursor-pointer hover:bg-white rounded-full px-3">Home</li>
+                    <li class="hover:text-black cursor-pointer hover:bg-white rounded-full px-3">Contact</li>
+                    <li class="hover:text-black cursor-pointer hover:bg-white rounded-full px-3">About</li>
+                </ul>
+            </div>
+
+            <div class="hidden md:flex space-x-5">
+                <button class="bg-green-500 font-bold px-6 py-3 rounded-full hover:bg-green-300 cursor-pointer ">Sign Up</button>
+                <button class="bg-green-500 font-bold px-6 py-3 rounded-full  hover:bg-green-300 cursor-pointer">Sign In</button>
+            </div>
+
+            <div>
+            <button><svg viewBox="0 0 24 24" class="h-10 w-10 md:hidden animate__animated animate__pulse animate__infinite animate__fast" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3z" fill="#ffffff"></path></g></svg></button>
+            </div>
+        </nav>
+    <!-- bg-yellow-200 bg-rose-200 -->
+    <div >
+        <!-- Addition -->
+        <div class="bg-indigo-200" >
+            <h1 class="text-center text-3xl p-5 font-bold">Addition</h1>
+            <div class="text-center">
+            <input type="number" id="add1" class="p-2 border-2 bg-white font-medium text-xl  border-black" placeholder="Enter the number 1:">
+            <br>
+            <input type="number" class="p-2 border-2 bg-white font-medium text-xl  border-black mt-2" id="add2" placeholder="Enter the number 1:">
+            <br>
+            <button onclick="add()" class="bg-blue-800 text-white font-bold px-8 py-3 rounded-full m-3">Add</button>
+            </div>
+            <h2 class="text-center font-bold text-2xl">Result: </h2>
+            <h2 id="result1" class="text-center font-bold text-2xl mt-2 bg-red-500 text-white"></h2>
+        </div>
+
+        <!-- subtraction -->
+        <div class="bg-green-200" >
+            <h1 class="text-center text-3xl p-5 font-bold"> Subtraction</h1>
+            <div class="text-center">
+            <input type="number" id="sub1" class="p-2 border-2 bg-white font-medium text-xl  border-black" placeholder="Enter the number 1:">
+            <br>
+            <input type="number" class="p-2 border-2 bg-white font-medium text-xl  border-black mt-2" id="sub2" placeholder="Enter the number 1:">
+            <br>
+            <button onclick="sub()" class="bg-blue-800 text-white font-bold px-8 py-3 rounded-full m-3">Sub</button>
+            </div>
+            <h2 class="text-center font-bold text-2xl">Result: </h2>
+            <h2 id="result2" class="text-center font-bold text-2xl mt-2  bg-red-500 text-white"></h2>
+        </div>
+        
+        <!-- multiplication -->
+        <div class="bg-yellow-200" >
+            <h1 class="text-center text-3xl p-5 font-bold">Multiplication</h1>
+            <div class="text-center">
+            <input type="number" id="mul1" class="p-2 border-2 bg-white font-medium text-xl  border-black" placeholder="Enter the number 1:">
+            <br>
+            <input type="number" class="p-2 border-2 bg-white font-medium text-xl  border-black mt-2" id="mul2" placeholder="Enter the number 1:">
+            <br>
+            <button onclick="mul()" class="bg-blue-800 text-white font-bold px-8 py-3 rounded-full m-3">Mul</button>
+            </div>
+            <h2 class="text-center font-bold text-2xl">Result: </h2>
+            <h2 id="result3" class="text-center font-bold text-2xl mt-2  bg-red-500 text-white"></h2>
+        </div>
+
+        <!-- division -->
+        <div class=" bg-rose-200" >
+            <h1 class="text-center text-3xl p-5 font-bold">Division</h1>
+            <div class="text-center">
+            <input type="number" id="div1" class="p-2 border-2 bg-white font-medium text-xl  border-black" placeholder="Enter the number 1:">
+            <br>
+            <input type="number" class="p-2 border-2 bg-white font-medium text-xl  border-black mt-2" id="div2" placeholder="Enter the number 1:">
+            <br>
+            <button onclick="div()" class="bg-blue-800 text-white font-bold px-8 py-3 rounded-full m-3">Div</button>
+            </div>
+            <h2 class="text-center font-bold text-2xl">Result: </h2>
+            <h2 id="result4" class="text-center font-bold text-2xl mt-2  bg-red-500 text-white"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

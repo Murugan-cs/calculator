@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend+Deca:wght@100..900&display=swap');
+@import 'animate.css';
+
+@theme {
+      --font-Head: "Boldonse", system-ui;
+      --font-nav: "Funnel Display", sans-serif;
+}
